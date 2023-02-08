@@ -35,14 +35,13 @@ i-ый шарик (последний в положительной позици
 выводится формула `heigth = iteration + 1 - abs(pos)`
 
 # Формулы:
-N - введённое число
+*N - введённое число
+*iteration - номер итерации
+*pos_positive - позиция, если по правилам положительная (pos_positive > 0)
+*pos_negative - позиция, если по правилам отрицательная (pos_positive <= 0)
+*heigth - высота (кол-во шариков на позиции)
 
-iteration - номер итерации
-pos_positive - позиция, если по правилам положительная (pos_positive > 0)
-pos_negative - позиция, если по правилам отрицательная (pos_positive <= 0)
-heigth - высота (кол-во шариков на позиции)
-
-iteration = floor(sqrt(N))
-pos_positive = iteration + 1 - (N - iteration**2)
-pos_negative = - iteration - pos_positive
-heigth = iteration + 1 - abs(pos)
+*`iteration = floor(sqrt(N))`
+*`pos_positive = iteration + 1 - (N - iteration**2)`
+*`pos_negative = - iteration - pos_positive`
+*`heigth = iteration + 1 - abs(pos)`
